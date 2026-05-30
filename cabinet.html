@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личный кабинет — Пирамида</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">ПИРА<span>МИДА</span></a>
+      <nav aria-label="Основное меню">
+        <ul>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="index.html#about">О компании</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <button type="button" class="btn btn-ghost" data-logout>Выйти</button>
+        <a class="btn btn-primary" href="request.html">Заявка</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="wrap">
+      <div class="auth-card auth-card-wide">
+        <p class="eyebrow">Личный кабинет</p>
+        <h1>Здравствуйте, <span id="cabinet-name"></span></h1>
+        <p class="auth-card-lead">Email: <strong id="cabinet-email"></strong></p>
+        <p class="auth-card-note">
+          Здесь можно разместить сохранённые заявки, избранные проекты и статус договора.
+          Сейчас кабинет работает локально в браузере — для общего доступа с любого устройства нужен сервер.
+        </p>
+        <div class="inline-actions">
+          <a class="btn btn-primary" href="request.html">Оставить заявку</a>
+          <a class="btn btn-ghost" href="index.html">На главную</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/auth.js"></script>
+</body>
+</html>

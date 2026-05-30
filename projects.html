@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проекты и планы — Пирамида</title>
+  <meta name="description" content="Фото готовых домов и планировки проектов компании Пирамида." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">ПИРА<span>МИДА</span></a>
+      <nav aria-label="Основное меню">
+        <ul>
+          <li><a href="projects.html" aria-current="page">Проекты</a></li>
+          <li><a href="index.html#about">О компании</a></li>
+          <li><a href="index.html#process">Как работаем</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <div id="auth-guest" class="header-auth">
+          <a class="btn btn-ghost" href="login.html">Войти</a>
+          <a class="btn btn-ghost" href="register.html">Регистрация</a>
+        </div>
+        <div id="auth-user" class="header-auth" hidden>
+          <a class="btn btn-ghost" href="cabinet.html">Кабинет</a>
+          <button type="button" class="btn btn-ghost" id="btn-logout">Выйти</button>
+        </div>
+        <a class="btn btn-ghost header-phone" href="tel:+79282296545">Позвонить</a>
+        <a class="btn btn-primary" href="request.html">Заявка</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Каталог</p>
+        <h1>Проекты домов: фото и планы</h1>
+        <p class="lead page-hero-lead">
+          Реализованные объекты и типовые планировки. Выберите проект или запросите расчёт под ваш участок.
+        </p>
+        <div class="gallery-filters" role="tablist" aria-label="Фильтр каталога">
+          <button type="button" class="gallery-filter is-active" data-filter="all">Все</button>
+          <button type="button" class="gallery-filter" data-filter="photo">Фото домов</button>
+          <button type="button" class="gallery-filter" data-filter="plan">Планы</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cream gallery-section">
+      <div class="wrap">
+        <h2 class="section-title">Фотографии</h2>
+        <p class="section-desc">Готовые дома и этапы строительства.</p>
+        <div class="gallery-grid">
+          <article class="gallery-item" data-type="photo">
+            <a class="gallery-link" href="img/projects/house-1.svg" target="_blank" rel="noopener">
+              <img src="img/projects/house-1.svg" alt="Каркасный дом «Ростов», фасад" width="800" height="500" loading="lazy" />
+            </a>
+            <div class="gallery-caption">
+              <h3>Дом «Ростов»</h3>
+              <p>Каркас · 120 м² · 2 спальни</p>
+            </div>
+          </article>
+          <article class="gallery-item" data-type="photo">
+            <a class="gallery-link" href="img/projects/house-2.svg" target="_blank" rel="noopener">
+              <img src="img/projects/house-2.svg" alt="Модульный дом «Дон», фасад" width="800" height="500" loading="lazy" />
+            </a>
+            <div class="gallery-caption">
+              <h3>Дом «Дон»</h3>
+              <p>Модуль · 145 м² · терраса</p>
+            </div>
+          </article>
+          <article class="gallery-item" data-type="photo">
+            <a class="gallery-link" href="img/projects/house-3.svg" target="_blank" rel="noopener">
+              <img src="img/projects/house-3.svg" alt="Дом «Пионер», фасад" width="800" height="500" loading="lazy" />
+            </a>
+            <div class="gallery-caption">
+              <h3>Дом «Пионер»</h3>
+              <p>СИП · 95 м² · мансарда</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-warm-dark gallery-section">
+      <div class="wrap">
+        <h2 class="section-title">Планировки</h2>
+        <p class="section-desc">Схемы этажей — можно скачать и обсудить с менеджером.</p>
+        <div class="gallery-grid gallery-grid-plans">
+          <article class="gallery-item gallery-item-plan" data-type="plan">
+            <a class="gallery-link" href="img/projects/plan-1.svg" target="_blank" rel="noopener">
+              <img src="img/projects/plan-1.svg" alt="План дома «Ростов», 120 м²" width="800" height="560" loading="lazy" />
+            </a>
+            <div class="gallery-caption">
+              <h3>План «Ростов»</h3>
+              <p>120 м² · 1 этаж · 3 комнаты</p>
+              <a class="gallery-dl" href="img/projects/plan-1.svg" download="plan-rostov.svg">Скачать план</a>
+            </div>
+          </article>
+          <article class="gallery-item gallery-item-plan" data-type="plan">
+            <a class="gallery-link" href="img/projects/plan-2.svg" target="_blank" rel="noopener">
+              <img src="img/projects/plan-2.svg" alt="План дома «Дон», 145 м²" width="800" height="560" loading="lazy" />
+            </a>
+            <div class="gallery-caption">
+              <h3>План «Дон»</h3>
+              <p>145 м² · 2 этажа · терраса</p>
+              <a class="gallery-dl" href="img/projects/plan-2.svg" download="plan-don.svg">Скачать план</a>
+            </div>
+          </article>
+          <article class="gallery-item gallery-item-plan" data-type="plan">
+            <a class="gallery-link" href="img/projects/plan-3.svg" target="_blank" rel="noopener">
+              <img src="img/projects/plan-3.svg" alt="План дома «Пионер», 95 м²" width="800" height="560" loading="lazy" />
+            </a>
+            <div class="gallery-caption">
+              <h3>План «Пионер»</h3>
+              <p>95 м² · открытая планировка</p>
+              <a class="gallery-dl" href="img/projects/plan-3.svg" download="plan-pioner.svg">Скачать план</a>
+            </div>
+          </article>
+        </div>
+        <div class="gallery-cta">
+          <p>Нужен индивидуальный проект под ваш участок?</p>
+          <a class="btn btn-primary" href="request.html">Оставить заявку на расчёт</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><strong>Пирамида</strong>ООО «ПИРАМИДА»</div>
+        <div><strong>Адрес</strong>г. Ростов-на-Дону, ул. Пионерская, д. 6</div>
+        <div><strong>Режим</strong>Пн–Пт 9:00–18:00</div>
+      </div>
+      <p class="fine">© <span id="y"></span> Пирамида. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="./js/auth.js"></script>
+  <script src="./js/gallery.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

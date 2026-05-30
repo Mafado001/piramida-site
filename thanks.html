@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заявка отправлена — Пирамида</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">ПИРА<span>МИДА</span></a>
+      <nav aria-label="Основное меню">
+        <ul>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="index.html#about">О компании</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="request.html">Ещё заявка</a>
+        <a class="btn btn-primary" href="index.html">На главную</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="wrap">
+      <div class="auth-card auth-card-wide thanks-card">
+        <p class="eyebrow">Спасибо</p>
+        <h1>Заявка принята</h1>
+        <p class="auth-card-lead">
+          Мы получили ваше обращение и свяжемся с вами по указанным контактам.
+          Обычно отвечаем в рабочее время: Пн–Пт 9:00–18:00.
+        </p>
+        <div class="inline-actions">
+          <a class="btn btn-primary" href="projects.html">Смотреть проекты</a>
+          <a class="btn btn-ghost" href="tel:+79282296545">Позвонить</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="fine">© <span id="y"></span> Пирамида. Все права защищены.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

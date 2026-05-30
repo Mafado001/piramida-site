@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заявка на расчёт — Пирамида</title>
+  <meta name="description" content="Оставьте заявку на расчёт строительства дома — компания Пирамида." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">ПИРА<span>МИДА</span></a>
+      <nav aria-label="Основное меню">
+        <ul>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="index.html#about">О компании</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <div id="auth-guest" class="header-auth">
+          <a class="btn btn-ghost" href="login.html">Войти</a>
+          <a class="btn btn-ghost" href="register.html">Регистрация</a>
+        </div>
+        <div id="auth-user" class="header-auth" hidden>
+          <a class="btn btn-ghost" href="cabinet.html">Кабинет</a>
+          <button type="button" class="btn btn-ghost" id="btn-logout">Выйти</button>
+        </div>
+        <a class="btn btn-ghost header-phone" href="tel:+79282296545">Позвонить</a>
+        <a class="btn btn-primary" href="request.html" aria-current="page">Заявка</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="wrap">
+      <div class="auth-card auth-card-wide">
+        <h1>Заявка на расчёт</h1>
+        <p class="auth-card-lead">
+          Заполните форму — заявка придёт на почту менеджера, мы перезвоним в рабочее время (Пн–Пт 9:00–18:00).
+        </p>
+
+        <form id="request-form" class="auth-form" novalidate>
+          <label class="auth-field">
+            <span>Имя *</span>
+            <input type="text" name="name" autocomplete="name" required minlength="2" />
+          </label>
+          <label class="auth-field">
+            <span>Телефон *</span>
+            <input type="tel" name="phone" autocomplete="tel" required placeholder="+7 (___) ___-__-__" />
+          </label>
+          <label class="auth-field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label class="auth-field">
+            <span>Интересующий проект</span>
+            <select name="project">
+              <option value="">— выберите —</option>
+              <option value="Каркасный дом">Каркасный дом</option>
+              <option value="Модуль / СИП">Модуль / СИП</option>
+              <option value="Индивидуальный проект">Индивидуальный проект</option>
+              <option value="Другое">Другое</option>
+            </select>
+          </label>
+          <label class="auth-field">
+            <span>Сообщение</span>
+            <textarea name="message" rows="4" placeholder="Участок, площадь, пожелания…"></textarea>
+          </label>
+          <label class="request-consent">
+            <input type="checkbox" name="consent" required />
+            <span>Согласен на обработку персональных данных для связи по заявке</span>
+          </label>
+          <p id="request-form-message" class="auth-msg" hidden></p>
+          <button type="submit" class="btn btn-primary auth-submit">Отправить заявку</button>
+        </form>
+
+        <p class="auth-switch">
+          Или позвоните: <a href="tel:+79282296545">+7 (928) 229-65-45</a>
+        </p>
+        <p class="auth-switch">
+          <a href="index.html">← На главную</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="fine">© <span id="y"></span> Пирамида. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="./js/site-config.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/request-form.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
